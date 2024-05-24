@@ -1,0 +1,2378 @@
+/* COMMON CSS CODE START */
+:root{
+    --primary-color:#FF6E1B;
+    --text-paragraph-color:#717171;
+    --text-color:#191919;
+    --dark-color:#000229;
+    --hover-color:#2D79EF;
+    --bg-light:#fff;
+    --bg-primary-light:#FFF0E6;
+    --box-shadow:rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    --bg-dark:#F9FAFE;
+    
+    
+}
+
+.primary-btn{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 18px;
+    color: var(--bg-light);
+    border-radius: 35px;
+    transition: 0.4s ease-in-out;
+    position: relative;
+    z-index: 10;
+}
+.primary-btn::before{
+    content: "";
+    position: absolute;
+    width:0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    transition: 0.4s ease-in-out;
+    z-index: -10;
+}
+.primary-btn:hover::before{
+    background-color: var(--hover-color);
+    width: 100%;
+
+}
+.primary-btn i{
+    color: var(--text-color);
+    width: 35px;
+    height:35px;
+    background-color: #fff;
+    line-height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left:10px;
+}
+p{
+    font-size:16px;
+    color: var(--text-paragraph-color);
+}
+ h2{
+    color: var(--text-color);
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+body{
+    scroll-behavior: smooth;
+}
+
+/* ====================Heading start ==================== */
+ h5.heading{
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline;
+    padding-left: 20px;
+}
+ h5.heading::before{
+    content: "";
+    top: 50%;
+    left:0px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+ h5.heading::after{
+    content: "";
+    top: 50%;
+    right:-20px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+/* ====================Heading end ==================== */
+
+
+
+
+/* COMMON CSS CODE END */
+
+
+/* ----------------Nav section Start---------------- */
+#nav .container{
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+#navbarSupportedContent ul li a{
+    color:var(--text-color);
+    transition: .4s;
+    padding: 20px ;
+}
+#navbarSupportedContent ul li a.active{
+    color:var(--primary-color);
+
+}
+#navbarSupportedContent ul li a:hover{
+    color:var(--primary-color);
+}
+#navbarSupportedContent button.shopp_bag{
+    background-color: var(--primary-color);
+    border: none;
+    outline: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--bg-light);
+    margin-right:10px;
+    font-size: 12px;
+    position: relative;
+}
+#navbarSupportedContent button.shopp_bag span{
+    color: var(--bg-light);
+    position: absolute;
+    right:-5px;
+    top:-5px;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    font-size: 10px;
+}
+#navbarSupportedContent li.chat a i{
+    width:30px;
+    height:30px;
+    background-color:transparent;
+    line-height: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+}
+/* ----------------Nav section End------------------ */
+
+
+
+
+
+
+
+/* =================HERO SECTION START================= */
+#hero_area {
+    margin: 80px 0 0 0;
+}
+#hero_area h5{
+    display: inline-block;
+    border: 1px solid var(--primary-color);
+    padding: 10px 20px;
+    transform: rotate(-10deg);
+    margin: 3px;
+    position: relative;
+    line-height: 1;
+}
+#hero_area h2{
+    color: var(--text-color);
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+#hero_area h1{
+    color: var(--primary-color);
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+}
+
+#hero_area  a.primary-btn{
+   margin-top:40px;
+}
+
+/* --------------FLY MAN SECTION-------------- */
+#fly_man {
+   position: relative;
+   margin-bottom:200px;
+   margin-top: 0px;
+}
+#fly_man .fly_man img{
+    top: -90px;
+    position: absolute;
+    animation: box_animation 5s .0s infinite linear ;
+    -webkit-animation: box_animation 5s .0s infinite linear ;
+}
+@keyframes box_animation {
+    0%{
+       top:-90px;
+       left:50px;
+    }
+    25%{
+        top:-40px;
+        left:50px;
+    }
+    50%{
+        top:-40px;
+        left:0px;
+    }
+    75%{
+        top: -90px;
+        left:0px;
+    }
+    100%{
+        top:-90px;
+        left:50px;
+    }
+}
+/* =================HERO SECTION END=================== */
+
+
+
+
+/* ==================CARD BOX SECTION START================== */
+#card_box .card_img{
+    padding: 15px 10px 10px 10px;
+    
+}
+#card_box .card_info h4{
+font-size:26px ;
+line-height:42px;
+color: var(--text-color);
+font-weight: 600;
+padding: 15px 0;
+}
+#card_box .card_info P{
+    padding: 0 30px 10px 30px;
+}
+#card_box .card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+  margin-bottom: 50px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+#card_box .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    
+}
+
+/* ==================CARD BOX SECTION END==================== */
+
+/*  ====================ABOUT SECTION START==================== */
+#about{
+    margin: 60px 0 0 0 ;
+}
+#about .about_img img{
+    border-top-left-radius: 173px;
+  border-top-right-radius: 200px;
+  border-bottom-left-radius: 170px;
+  border-bottom-right-radius: 161px;
+}
+#about h2{
+    font-size:50px;
+    padding: 10px 0;
+
+}
+#about h5{
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline;
+    padding-left: 20px;
+}
+#about h5::before{
+    content: "";
+    top: 50%;
+    left:0px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+#about h5::after{
+    content: "";
+    top: 50%;
+    right:-20px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+#about P{
+    line-height: 30px;
+}
+#about .about_small_box{
+    margin: 25px 0 10px 0 ;
+    padding: 10px 10px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+
+}
+#about .about_small_box span{
+    font-size: 14px;
+    color: var(--text-paragraph-color);
+}
+#about .about_small_box i{
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    color: var(--bg-light);
+    font-size:20px;
+}
+#about a.primary-btn{
+    margin:25px 0 20px 0;
+}
+/*  ====================ABOUT SECTION END====================== */
+
+
+/* ====================HEAD LINE SECTION START==================== */
+#head_line{
+    margin:30px 0;
+}
+#head_line span{
+    font-size:40px;
+    font-weight:600;
+    padding: 10px 25px 0 25px;
+
+}
+
+#head_line span::before{
+    content: "";
+    position: absolute;
+    width:8px;
+    height:8px;
+    background-color:var(--text-color);
+    left: 0;
+    bottom:20px;
+}
+
+/* ====================HEAD LINE SECTION END====================== */
+
+/* ======================Service section start====================== */
+#service{
+    margin:100px 0 150px 0;
+}
+#service h5{
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline;
+    padding-left: 20px;
+}
+#service h5::before{
+    content: "";
+    top: 50%;
+    left:0px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+#service h5::after{
+    content: "";
+    top: 50%;
+    right:-20px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+#service  .service-info{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 48px 20px 30px 30px;
+    border-radius: 25px;
+    z-index: 5;
+    cursor: pointer;
+    position: relative;
+}
+#service  .service-info::before{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+    background-color:black;
+    z-index: -5;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+#service .service_box:hover .service-info::before{
+    transform: scale(1);
+}
+#service .service_box {
+    position: relative;
+    overflow: visible;
+} 
+ #service .service_box  .service-info{
+    overflow: hidden;
+} 
+ #service .service_box  .service-info::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    border-radius: 25px;
+    background-color:var(--dark-color);
+    transition: 0.4s;
+    overflow: hidden;
+    transform: scale(0);
+    cursor: pointer;
+    overflow: hidden;
+}
+#service .service_box:hover .service-info p{
+    color: var(--bg-light);
+}
+#service .service_box:hover .service-info h4{
+    color: var(--bg-light);
+}
+#service .service_box{
+    position: relative;
+}
+#service .service_box .service_logo{
+    width:100px;
+    height:100px;
+    background-color:var(--bg-primary-light);
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top:-70px;
+    left:25px;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+#service  .service-info p{
+   padding: 25px 0;
+}
+#service  .service-info i{
+    width: 40px;
+    height: 40px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transform: rotate(-40deg);
+    color: var(--bg-light);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#service .service_box .service-info i:hover{
+background-color: var(--primary-color);
+}
+#service .service_box:hover .service_logo{
+    background-color:orange;
+    }
+#service h3{
+    font-size: 40px;
+    color: var(--text-color);
+    line-height: 55px;
+    font-weight: 700;
+    padding: 15px 0 50px 0;
+}
+#service .service_card .service_box:nth-child(1){
+    margin-bottom: 50px;
+}
+#service .service_card .service_box:nth-child(2){
+    margin-top: 50px;
+}
+#service .service_card .service_box:nth-child(3){
+    margin-top: 50px;
+}
+#service .service_card .service_box:nth-child(4){
+    margin-top: 100px;
+}
+/* ======================Service section end====================== */
+
+
+/* =======================SKILL SECTION START======================= */
+#skill{
+    margin:100px 0 200px 0;
+}
+.skill_info h5{
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline;
+    padding-left: 20px;
+}
+.skill_info h5::before{
+    content: "";
+    top: 50%;
+    left:0px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+.skill_info h5::after{
+    content: "";
+    top: 50%;
+    right:-20px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+.skill_info h3{
+    font-size: 50px;
+    line-height: 65px;
+    color: var(--text-color);
+    font-weight: 700;
+    padding: 10px 0 20px 0;
+}
+.skill_info p{
+    line-height:30px;
+}
+#skill .single_progress_bar{
+    margin: 20px 0;
+}
+#skill .single_progress_bar .progress{
+   height:8px;
+   border-radius: 15px;
+}
+.progress-bar{
+   border-radius: 15px;
+   background-color:var(--primary-color);
+}
+#skill .single_progress_bar h4{
+    font-size: 22px;
+    color: var(--text-color);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+#skill .single_progress_bar span{
+    background-color: var(--primary-color);
+    color: var(--bg-light);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius:8px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-right: 10px;
+}
+#skill .skill_img img{
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+/* =======================SKILL SECTION END========================= */
+
+
+/* ==========================PRICING SECTION START========================== */
+#Pricing{
+    margin: 80px 0;
+}
+.pricing_info h5{
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline;
+    padding-left: 20px;
+    margin-left: 20px;
+    
+}
+.pricing_info h3{
+    line-height:49px;
+    font-weight: 700;
+    font-size: 43px;
+    padding: 20px 0 0 20px;
+}
+.pricing_info h5::before{
+    content: "";
+    top: 50%;
+    left:0px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+.pricing_info h5::after{
+    content: "";
+    top: 50%;
+    right:-20px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+#Pricing .pricing_card{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 20px 0 20px 20px;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 30%;
+    margin-right: 15px;
+}
+#Pricing .pricing_card:nth-child(2){
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+}
+#Pricing .pricing_card:nth-child(2) a.primary-btn{
+    background-color: var(--dark-color);
+    transition: 0.4s;
+}
+#Pricing .pricing_card:nth-child(2) ul li,
+#Pricing .pricing_card:nth-child(2) ul li i,
+#Pricing .pricing_card:nth-child(2) h4{
+ color:#fff;
+}
+#Pricing .pricing_card:nth-child(2) a.primary-btn:hover{
+    background-color: var(--hover-color);
+}
+#Pricing .pricing_card ul li{
+    padding-left:25px; padding-bottom:10px;
+   
+}
+#Pricing .pricing_card h4{
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+#Pricing .pricing_card h4{
+    padding-left:25px;
+}
+#Pricing .pricing_card ul li span{
+    font-size: 12px;
+}
+#Pricing .pricing_card ul li i{
+     width:20px;
+     height:20px;
+     line-height:20px;
+     text-align: center;
+     background-color: transparent;
+     border: 1px solid var(--primary-color);
+     border-radius: 50%;
+     color: var(--primary-color);
+     margin-right: 8px;
+}
+#Pricing .pricing_card ul li.price_amount{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+#Pricing .pricing_card ul li.price_amount span{
+    font-size:28px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+#Pricing .pricing_card ul li.price_amount sup,
+#Pricing .pricing_card ul li.price_amount sub{
+    font-size: 16px;
+    color: var(--text-paragraph-color);
+    font-weight: 600;
+}
+#Pricing .pricing_card:nth-child(2) ul li.price_amount span{
+    color: var(--bg-light);
+}
+#Pricing .pricing_card:nth-child(2) ul li.price_amount sup,
+#Pricing .pricing_card:nth-child(2) ul li.price_amount sub{
+    font-size: 16px;
+    color:var(--bg-light);
+    font-weight: 600;
+}
+#Pricing .pricing_card a.primary-btn{
+    padding:8px 15px 8px 15px;
+    font-size: 16px;
+    font-weight: 600;
+  margin: 15px 0 15px 15px;
+}
+#Pricing .pricing_card a.primary-btn i{
+    width: 30px ;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin-left: 10px;
+}
+#Pricing .pricing_card span.popular{
+    color: var(--bg-light);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 17px 0px 0;
+    position: absolute;
+    top: -17px;
+    right: -21px;
+  transform: rotate(30deg);
+  width: 130px;
+  height: 48px;
+  line-height: 75px;
+  text-align: right;
+background-color: var(--hover-color);
+overflow: hidden;
+}
+/* ==========================PRICING SECTION END========================== */
+
+
+/* ===========================FILTER SECTION START=========================== */
+#filter{
+    margin: 80px 0;
+}
+#filter .container ul {
+  display:flex;
+  align-items: center;
+  padding: 10px 0 40px 0 ;
+}
+#filter .container ul li{
+    background-color: #F5F7FC;
+    padding: 10px 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin:5px 10px 5px;
+    border-radius: 10px;
+}
+#filter .container ul li.active{
+    background-color: var(--hover-color);
+    color: var(--bg-light);
+}
+.product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.product .itemBox{
+   box-shadow: var(--box-shadow);
+   width: 31%;
+   margin: 0 15px 25px 0;
+   border-radius:15px ;
+}
+.product .itemBox img{
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 15px;
+    width: 100%;
+}
+.product .itemBox .product_info{
+    padding: 10px 0 50px 15px;
+}
+.product .itemBox .product_info h5{
+    font-size: 20px;
+    padding: 15px 0 10px 0;
+    font-family: "Poppins", sans-serif;
+}
+.product .itemBox .product_info h4 a{
+    font-size: 24px;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight:600;
+    transition: 0.4s;
+}
+.product .itemBox .product_info h4 a:hover{
+    color: var(--primary-color);
+}
+/* ===========================FILTER SECTION END============================= */
+
+/* ==============================BLOG SECTION START============================== */
+#blog_post h5{
+    font-size: 16px;
+    color: var(--primary-color);
+    position: relative;
+    display: inline;
+    padding-left: 20px;
+}
+#blog_post h5::before{
+    content: "";
+    top: 50%;
+    left:0px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+#blog_post h5::after{
+    content: "";
+    top: 50%;
+    right:-20px;
+    transform: translatey(-50%);
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+}
+#blog_post h3{
+    font-size: 40px;
+    font-weight: 700;
+    padding:10px 0;
+}
+#blog_post p{
+    line-height: 30px;
+    padding-bottom: 35px;
+}
+#blog_post .blog_box .admin i,
+#blog_post .blog_box .tag i{
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+#blog_post .blog_box .admin h6,
+#blog_post .blog_box .tag h6{
+    color: var(--text-paragraph-color);
+    transition: 0.4s;
+}
+#blog_post .blog_box .tag{
+    margin-left: 50px;
+}
+#blog_post .blog_box .admin h6:hover,
+#blog_post .blog_box .tag h6:hover{
+    color: var(--primary-color);
+}
+#blog_post .blog_link{
+    padding-bottom: 25px;
+}
+#blog_post .blog_box .blog_heading h4{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--text-color);
+    transition: 0.4s;
+    font-family: "Poppins", sans-serif;
+    padding: 25px 0;
+}
+#blog_post .blog_box .blog_heading h4:hover{
+    color: var(--primary-color);
+}
+
+#blog_post .blog_box .blog_date button{
+    background-color: none;
+    border: none;
+    border-radius: 25px;
+    outline:0;
+    background-color: transparent;
+}
+#blog_post .blog_box{
+    box-shadow: var(--box-shadow);
+    padding: 25px 20px 30px 20px;
+    position: relative;
+    border-radius: 15px;
+}
+#blog_post .blog_box .blog_date button a{
+    color: var(--bg-light); padding: 10px 25px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background:var(--primary-color);
+    border-radius: 25px;
+    position: relative;
+    z-index: 5;
+}
+#blog_post .blog_box .blog_date button a::before{
+    position: absolute;
+    content: "";
+    border-radius: 25px;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    background-color: var(--hover-color);
+    transition: 0.3s;
+    z-index: -5;
+}
+#blog_post .blog_box .blog_date button:hover a::before{
+width: 100%;
+}
+#blog_post{
+     margin-bottom: 50px;
+}
+#blog_post .blog_box .blog_img .overlay{
+    width: 80px ;
+    height: 80px;
+    background-color: var(--hover-color);
+    border-radius:50%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-30%, -40%);
+    text-align: center;
+    cursor: pointer;
+    transform: scale(0);
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+#blog_post .blog_box .blog_img .overlay i{
+    line-height: 80px;
+    font-size: 30px;
+    color: var(--text-color);
+    transform: rotate(50deg);
+    transition:0.4s ;
+}
+#blog_post .blog_box .blog_img .overlay:hover i{
+    color: var(--primary-color);
+}
+#blog_post .blog_box:hover .blog_img .overlay{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/* ==============================BLOG SECTION END================================= */
+
+
+
+/* -----------------------------Footer section start----------------------------- */
+#footer{
+    background-color: var(--dark-color);
+    border-radius: 15px;
+    margin: 80px 20px 10px 20px;
+    padding: 50px 0;
+}
+#footer .footer_top{
+    border-bottom: 1px solid var(--bg-primary-light);
+    padding-bottom:25px;
+}
+#footer .footer_logo h3{
+    color: var(--bg-light);
+    font-size:30px;
+    font-weight: 800;
+    line-height: 55px;
+    font-family: "Roboto", sans-serif;
+}
+#footer  p.footer_info{
+    color: var(--bg-light);
+    line-height:30px;
+    padding: 20px 0 10px 0;
+}
+#footer  form {position: relative;}
+#footer  form input.email_box{
+    width:100%;
+    border-radius: 15px;
+    padding: 15px 137px 15px 15px;
+    outline: none;
+    border: none;
+    /* position: relative; */
+}
+#footer  form input.subscribe-btn{
+  position: absolute;
+  top: 5px;
+  right: 9px;
+  border: none;
+  outline: 0;
+  border-radius: 15px;
+  background-color:var(--primary-color);
+  padding: 10px;
+  color: var(--bg-light);
+  transition:.4s ;
+
+}
+#footer  form input.subscribe-btn:hover{
+    background-color: var(--hover-color);
+}
+#footer h4.footer_heading{
+    color: var(--primary-color);
+    font-size: 22px;
+    padding: 20px 0 15px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+#footer .footer_location .logo i{
+    color:var(--bg-light);
+    font-size: 24px;
+    cursor: pointer;
+    margin-right:20px;
+    transition: .4S;
+}
+#footer .footer_location .logo i:hover{
+    transform: scale(1.2);
+    color: var(--primary-color);
+}
+#footer .footer_location .details p{
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+#footer .footer_location .details span,
+#footer .footer_location .details span a{
+    font-size:18px;
+    padding-bottom:13px;
+    font-family: "Roboto", sans-serif;
+    color: var(--bg-light);
+    display: inline-block;
+    transition: .4s;
+}
+
+#footer .footer_location .details span a:hover{
+    color: var(--primary-color);
+}
+#footer .footer_location {
+    margin-left: 5px;
+}
+#footer .footer_page ul li a{
+    color: var(--bg-light);
+    padding-bottom: 15px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size:18px;
+    transition: .4s;
+}
+#footer .footer_page ul li a:hover{
+    color: var(--primary-color);
+}
+#footer .footer_seo ul li a{
+    color: var(--bg-light);
+    padding-bottom: 15px;
+    display: inline-block;
+    font-family: "Roboto", sans-serif;
+    font-size:18px;
+    transition: .4s;
+}
+#footer .footer_seo ul li a:hover{
+    color: var(--primary-color);
+}
+#footer .footer_bottom{
+    margin-top:40px;
+}
+#footer .footer_bottom .copy_info h5{
+    color:var(--bg-light);
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+#footer .footer_bottom .copy_info h5 span{
+    color: var(--primary-color);
+    text-decoration: underline;
+    padding: 0 5px;
+}
+#footer .footer_bottom .footer_social_icon ul li{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+    background-color: var(--bg-light);
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+#footer .footer_bottom .footer_social_icon ul li a{
+    color:var(--text-color);
+    transition: .4s;
+}
+#footer .footer_bottom .footer_social_icon ul li:hover{
+    background-color:var(--primary-color);
+}
+#footer .footer_bottom .footer_social_icon ul li a i{
+    transition: .4s;
+}
+#footer .footer_bottom .footer_social_icon ul li:hover a i{
+    transform: scale(1.1); color: var(--bg-light);
+
+}
+/* -----------------------------Footer section end------------------------------- */
+
+
+
+
+
+
+
+/* =============================SCROLL SECTION START============================= */
+#scroll .scroll_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:var(--primary-color);
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 50;
+    position: fixed;
+    z-index: 50;
+    bottom:50px;
+    transition:.4s ;
+    display: none;
+}
+#scroll .scroll_btn.open{
+    display: inline-block;
+}
+#scroll .container .scroll_btn i{
+    font-size: 18px;
+    transition: .4s;
+    color: var(--bg-light);
+    transition: .4s;
+}
+#scroll .scroll_btn:hover i{ 
+    transform:scale(1.2) ; 
+}
+#scroll .scroll_btn:hover {
+       background-color:var(--dark-color);
+}
+
+/* =============================SCROLL SECTION END=============================== */
+
+
+/* -----------------------------------------------------ABOUT US PAGE START----------------------------------------------------- */
+/* =============================About Head line section start =============================*/
+#about_head_line{
+    margin:50px 0;
+}
+#about_head_line span{
+    font-size:45px;
+    font-weight:600;
+    padding: 20px 25px 0 25px;
+    color: var(--bg-light);
+}
+#about_head_line marquee {
+    background-color:var(--primary-color);
+    transform: rotate(3deg);
+    padding: 10px;
+}
+/* =============================About Head line section end=============================== */
+
+
+/* ===========================Abut Service section start=========================== */
+#service_about{
+   margin: 100px 0;
+}
+#service_about .service_about_heading h3{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 35px;
+}
+#service_about .service_about_heading{
+    text-align: center;
+    margin-bottom: 35px;
+}
+#service_about .about_service_card .link_icon{
+    background-color: var(--hover-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transform: translateY(50%);
+    transition: .4s;
+}
+#service_about .about_service_card .link_icon i{
+    transform: rotate(-50deg);
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--bg-light);
+}
+#service_about .about_service_card .link_icon:hover{
+    background-color: var(--primary-color);
+}
+#service_about .about_service_card {
+    text-align: center;
+}
+#service_about .about_service_card .about_service_img{
+    padding: 40px 0 25px 0;
+}
+#service_about .about_service_card  h4 a{
+    color: var(--text-color);
+    padding-bottom: 15px;
+    font-weight:500;
+    transition: .4s;
+    display: inline-block;
+}
+#service_about .about_service_card  h4 a:hover{
+    color: var(--primary-color);
+}
+#service_about .about_service_card  p{
+    padding: 0 20px 10px 20px;
+}
+#service_about .about_service_card{
+    transition: .4s;
+    border-radius: 15px;
+    box-shadow: var(--box-shadow);
+    width:32%;
+    margin: 0 15px 60px 0;
+}
+#service_about .about_service_card:hover{
+    transform: translateY(-5%);
+}
+/* ===========================Abut Service section end============================= */
+
+
+/* =========================== ABOUT NAV-TAB SECTION START=========================== */
+#about_nav{
+    margin: 80px 0;
+    
+}
+#about_nav .container{
+    background-color:#F1F3F9;
+    overflow: hidden;
+}
+
+#about_nav #pills-tab{
+    display: flex;
+   flex-wrap: nowrap;
+    background-color:#fff;
+}
+#about_nav #pills-tab .nav-link.active{
+    color: var(--primary-color);
+    background-color: transparent;
+    transition: .4s;
+    
+}
+
+#about_nav #pills-tab  li button{
+    padding: 15px 90px;
+    position: relative;
+    color: var(--text-color);
+    display: inline-block;
+    font-size: 25px;
+}
+
+#about_nav #pills-tab .nav-link.active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color:var(--hover-color);
+    bottom:0;
+    left: 0;
+    transition: .4s;
+}
+
+#about_nav #pills-tab  li button::before{
+    content: '';
+    position: absolute;
+    width:0;
+    height: 2px;
+    background-color:var(--hover-color);
+    bottom:0;
+    left: 0;
+    transition: .4s;
+}
+#about_nav #pills-tab  li:hover button::before{
+    width: 100%;
+
+}
+#about_nav #pills-tab  li button:hover{
+    color: var(--primary-color);
+
+}
+#about_nav #pills-tab .nav-link.active:hover{
+    color: var(--primary-color);
+}
+#about_nav .tab-content{
+    margin-top: 25px;
+}
+#about_nav .nav_info p{
+    font-size: 18px;
+    line-height:30px;
+    padding:10px 0 15px 0;
+}
+#about_nav .nav_info p span{
+    color: var(--primary-color);
+    font-size: 35px;
+}
+#about_nav .nav_info h5{
+    padding: 15px 0;
+}
+#about_nav .nav_info h5 i{
+    color: var(--bg-light);
+    font-size: 24px;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    line-height: 28px;
+    text-align:center;
+}
+#about_nav .nav_info h5 span{
+    color: var(--text-paragraph-color);
+    padding-left: 15px;
+}
+#about_nav .nav_info a{
+    margin-top:28px;
+    margin-bottom: 10px;
+}
+/* =========================== ABOUT NAV-TAB SECTION END============================= */
+
+/* ==========================ABOUT TIME LINE SECTION START========================== */
+#time_line .time_line_details .time_year{
+    width: 175px;
+    height: 175px;
+    background-color: var(--hover-color);
+    line-height: 175px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--bg-light);
+    font-size: 40px;
+    font-weight: 700;
+    margin: auto;
+    animation: time_year  8s 0s infinite linear;
+
+}
+@keyframes time_year {
+    0%{
+      transform: translateY(-5%);
+    }
+    50%{
+        transform: translateY(0);
+
+    }
+    100%{
+        /* background-color: #fff;
+        opacity:1; */
+        transform: translateY(-5%);
+    }
+}
+#time_line .time_line_details .time_icon{
+    width: 25px;
+    height: 25px;
+    line-height:25px;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--bg-light);
+    animation: time_icon 5s 0s infinite linear;
+}
+@keyframes time_icon {
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+/* ==========================ABOUT TIME LINE SECTION END============================ */
+
+/* -----------------------------------------------------ABOUT US PAGE END------------------------------------------------------- */
+
+
+
+
+
+/* ----------------------------------------------------CONTACT PAGE START---------------------------------------------------- */
+/* ===================Banner section start=================== */
+#banner .container{
+    padding: 85px 0;
+}
+#banner{
+    background-color: #F9FBFF;
+}
+#banner .container h3{
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+}
+#banner .container p a{
+    color: var(--text-color);
+    transition: .4s;
+    padding-right: 10px;
+}
+#banner .container p i{
+    color: var(--text-color);
+    padding-right: 5px;
+    transition: .4s;
+}
+#banner .container p:hover a,
+#banner .container p:hover i{
+    color: var(--primary-color);
+}
+#banner .container span.contact{
+    color: var(--primary-color);
+}
+/* ===================Banner section end=================== */
+
+/* =================Contact Slider Section start================= */
+#contact_slider{
+    margin-top: 50px;
+}
+#contact_slider .container{
+    background-color: #F5F5F7;
+}
+#contact_slider h3{
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+#contact_slider p span{
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: 600;
+}
+#contact_slider .contact ul li{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+#contact_slider .img_contact{
+    border-radius: 15px;
+    background-color: #FFFFFF;
+}
+#contact_slider .img_contact img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#contact_slider .map_contact {
+  margin: 20px 0;
+}
+
+/* .sticky{
+    position: fixed;
+    top:0 ;
+   
+} */
+#contact_slider .contact{
+    padding: 10px 0 10px 15px;
+}
+#contact_slider .contact ul li i{
+    font-size: 22px;
+    color: var(--primary-color);
+    padding-right: 10px;
+}
+#contact_slider .contact ul li a{
+    color:#727272;
+    transition: .4s;
+}
+#contact_slider .contact ul li a:hover{
+    color: var(--primary-color);
+}
+#contact_slider .contact ul li p{
+    color: var(--text-color);
+}
+#contact_slider .contact ul li p span{
+     color:#727272;
+     font-size: 16px;
+     font-weight: 500;
+}
+#contact_slider .img_contact .contact_social_icon ul li{
+    margin: 15px;
+    width:40px;
+    height: 40px;
+    background-color: transparent;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    transition: .4s;
+    cursor: pointer;
+}
+#contact_slider .img_contact .contact_social_icon ul li i{
+    color: var(--text-color);
+    transition: .4s;
+}
+#contact_slider .img_contact .contact_social_icon ul li:hover{
+    background-color: var(--primary-color);
+}
+#contact_slider .img_contact .contact_social_icon ul li:hover i{
+    color: var(--bg-light);
+}
+#contact_slider .contact_card{
+    margin:30px 0;
+}
+#contact_slider .contact_card_box {
+    padding:20px;
+    background-color: #fff;
+    margin-bottom:30px;
+    border-radius: 15px;
+}
+#contact_slider .contact_card_box .card_tittal img{
+    width:30%;
+}
+#contact_slider .contact_card_box .card_tittal h4{
+    padding-left: 10px;
+}
+#contact_slider .contact_card_box p{
+    padding-top:20px;
+    line-height: 25px;
+}
+#contact_slider p span.info{
+    color: var(--primary-color);
+    font-size: 28px;
+}
+/*--------Contact Form--------*/
+#contact_slider .contact_form{
+    background-color:#FFFFFF;
+    padding:30px;
+    margin: 15px 15px 15px 15px;
+    border-radius: 15px;
+}
+#contact_slider .contact_form h3{
+    font-size: 38px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+#contact_slider .contact_form .input_group{
+    margin-bottom: 15px;
+}
+#contact_slider .contact_form .input_group textarea{
+    width: 100%;
+    outline: 0;
+    border-radius: 10px;
+    padding: 15px 0  0 15px;
+    background-color: #F7F9FE;
+    border: none;
+    
+}
+#contact_slider .contact_form .input_group input{
+    width: 100%;
+    outline: 0;
+  background-color: #F7F9FE;
+    border-radius: 10px;
+    padding: 10px 10px;
+    border: none;
+}
+#contact_slider .contact_form .input_group select{
+    width: 100%;
+    outline: 0;
+    background-color: #F7F9FE;
+    border-radius: 10px;
+    padding: 10px 10px;
+    color: var(--text-paragraph-color);
+    border: none;
+}
+#contact_slider .contact_form .submit_btn input {
+background:var(--primary-color);
+border-radius: 15px;
+padding: 15px 20px;
+border: none;
+color: var(--bg-light);
+font-weight: 700;
+font-size: 18px;
+transition: .4s;
+margin-top: 15px;
+}
+#contact_slider .contact_form .submit_btn input:hover{
+    background-color: var(--hover-color);
+}
+
+/*------------ Progases Start ------------*/
+#contact_slider .progess_item{
+    margin: 35px 0 70px 0px;
+}
+#contact_slider .progess_item .single_progress_bar{
+    margin-bottom: 25px;
+}
+#contact_slider .progess_item .single_progress_bar span{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: var(--bg-light);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right: 15px;
+    font-weight: 700;
+}
+#contact_slider .progess_item .single_progress_bar h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#contact_slider .progess_item .single_progress_bar .progress{
+    height:8px;
+}
+
+/* =================Contact Slider Section End================= */
+
+
+/* =====================Previous Secton start===================== */
+
+#pervious_next .privious_next_btn{
+    display: flex;
+    justify-content: space-between;
+}
+#previous{
+    margin: 20px 0;
+}
+#previous h4{
+    color: var(--primary-color);
+}
+#previous .previous_btn a i{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: var(--bg-light);
+    margin-right: 10px;
+}
+#previous .previous_btn a{
+    color: var(--text-color);
+    transition: .4s;
+}
+#previous .previous_btn {
+    margin-bottom: 5px;
+}
+#previous .previous_btn a:hover {
+    color: var(--primary-color);
+}
+/* =====================Previous Secton end======================= */
+
+
+/* =====================NEXT     Secton start===================== */
+#next{
+    margin: 20px 0;
+}
+#next h4{
+    color: var(--primary-color);
+}
+#next .next_btn a i{
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: var(--bg-light);
+    margin-left: 10px;
+}
+#next .next_btn{
+    margin-bottom: 5px;
+    text-align: end;
+}
+#next .next_btn a{
+    color: var(--text-color);
+    transition: .4s;
+    font-size: 18px;
+}
+
+#next .next_btn a:hover {
+    color: var(--primary-color);
+}
+/* =====================NEXT Secton end======================= */
+/* ----------------------------------------------------CONTACT PAGE END------------------------------------------------------ */
+
+
+
+/* ---------------------------------------------------------SHOP PAGE SECTION START--------------------------------------------------------- */
+/* ====================SHOPPIN CARD SECTION START==================== */
+#shop_card .card_box img{
+    transform: scale(1);
+    transition: .4s;
+    border-radius: 10px;
+}
+#shop_card .all_cart{
+    display: flex;
+    flex-wrap: wrap;
+}
+#shop_card .all_cart .card_box{
+    margin-right:15px;
+    margin-bottom: 20px;
+    width: 31%;
+    box-shadow: var(--box-shadow);
+}
+#shop_card .card_box img:hover{
+    transform: scale(1.2);
+}
+ #shop_card .card_box .img{
+    border-radius: 10px;
+    overflow: hidden; 
+ }
+#shop_card .card_box {
+    margin-top: 15px;
+    border-radius: 10px;
+}
+#shop_card .card_box h4.product_tittle{
+    font-size: 22px;
+    padding: 10px 0;
+} 
+#shop_card .card_box p{
+    color: var(--text-color);
+}
+#shop_card .card_box p del{
+    color: var(--text-paragraph-color);
+}
+#shop_card .card_box a.cart_btn{
+    background-color: var(--primary-color);
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 15px;
+    color: var(--bg-light);
+    margin: 10px 0 5px 0;
+    transition: .4s;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+#shop_card .card_box a.cart_btn:hover{
+    background-color: var(--hover-color);
+    transform: scale(1.1);
+}
+
+/*-------------------Product Categories-------------------*/
+#shop_card .product_categories{
+    box-shadow: var(--box-shadow);
+    margin-top:30px;
+    padding: 25px 20px;
+    border-radius: 10px;
+}
+#shop_card .product_categories .heading_categories{
+    position: relative;
+}
+#shop_card .product_categories h4{
+    color: var(--text-color);
+    padding-left:30px;
+}
+#shop_card .product_categories h4::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+#shop_card .product_categories h4::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:50%;
+    right: 50px;
+    transform: translateY(-50%);
+    background-color:var(--hover-color);
+    border-radius: 50%;
+}
+
+#shop_card .product_categories .categories_list li{
+    padding:25px 0 16px 0;
+    border-bottom: 1px dashed #E1E1E1;
+    
+}
+#shop_card .product_categories .categories_list li a{
+transition: .4s;
+color: var(--text-color);
+padding-left:30px;
+
+}
+#shop_card .product_categories .categories_list li:hover a{
+    color: var(--primary-color);
+}
+#shop_card .product_categories .categories_list li:hover{
+    transform: translatex(1%);
+
+}
+#shop_card .product_categories .categories_list{
+    margin-top: 30px;
+} 
+
+
+/* ----------------PRODUCT LIST---------------- */
+#shop_card .product_categories_list{
+    margin-top: 50px;
+    box-shadow: var(--box-shadow);
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+#shop_card .product_categories_list .heading_categories{
+    position: relative;
+}
+#shop_card .product_categories_list h4{
+    color: var(--text-color);
+    padding-left:30px;
+}
+#shop_card .product_categories_list h4::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+#shop_card .product_categories_list h4::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top:50%;
+    right: 160px;
+    transform: translateY(-50%);
+    background-color:var(--hover-color);
+    border-radius: 50%;
+}
+#shop_card .product_categories_list ul li{
+    padding:15px 0;
+}
+#shop_card .product_categories_list ul li .full_card{
+display: flex;
+justify-content: space-between;
+}
+#shop_card .product_categories_list ul li .full_card .img{
+    width: 20%;
+    cursor: pointer;
+    transition: .4s;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+#shop_card .product_categories_list ul li .full_card .img img{
+    border-radius: 10px;
+
+}
+#shop_card .product_categories_list ul li .full_card .product_info h5 a{
+    color: var(--text-color);
+    font-size: 18px;transition: .7s;
+}
+#shop_card .product_categories_list ul li .full_card p{
+    padding-top: 10px;
+}
+#shop_card .product_categories_list ul li:hover .full_card .product_info h5 a{
+    color:var(--primary-color);
+}
+/* ====================SHOPPIN CARD SECTION END==================== */
+
+
+ /* =====================PAGE CHANGE BTN START===================== */
+ #page_change {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 50px auto;
+
+ }
+ #page_change .page_change_btn ul{
+    display: flex; 
+    margin: auto;
+ }
+ #page_change .page_change_btn ul li button {
+    background-color:transparent;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid #CFC8D8;
+    transition: .4s;
+ }
+ #page_change .page_change_btn ul li button a{
+    color: var(--text-color);
+    font-size: 18px;
+ }
+ #page_change .page_change_btn ul li:nth-child(1) button{
+ border-top-left-radius:10px ;
+ border-bottom-left-radius:10px ;
+ }
+ #page_change .page_change_btn ul li:nth-child(3) button{
+    border-top-right-radius:10px ;
+    border-bottom-right-radius:10px ;
+    }
+ #page_change .page_change_btn ul li button.show {
+    background-color:var(--primary-color);
+ }
+ #page_change .page_change_btn ul li button.show a{
+ color: var(--bg-light);
+}
+ #page_change .page_change_btn ul li button:hover {
+    background-color: var(--primary-color);
+ }
+ #page_change .page_change_btn ul li button:hover a{
+     color: var(--bg-light);
+ }
+ /* =====================PAGE CHANGE BTN END===================== */
+ 
+ /* ---------------------------------------------------------SHOP PAGE SECTION END--------------------------------------------------------- --*/
+ 
+ 
+ 
+ /* ---------------------------------------------------------SERVICES PAGE START--------------------------------------------------------- */
+ /* ========================SERVICES CARD SECTION START======================== */
+ #services_card  .service-info{
+     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    padding: 48px 20px 30px 30px;
+    border-radius: 25px;
+    z-index: 5;
+    cursor: pointer;
+    position: relative;
+}
+#services_card{
+    margin: 140px 0 50px 0;
+}
+#services_card .service-info::before{
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    border-radius: 25px;
+    height: 100%;
+    background-color:black;
+    z-index: -5;
+    transform: scale(0);
+    transition: .4s;
+}
+#services_card .service_box:hover .service-info::before{
+    transform: scale(1);
+}
+#services_card .service_box {
+    position: relative;
+    overflow: visible;
+} 
+ #services_card .service_box  .service-info{
+    overflow: hidden;
+} 
+ #services_card .service_box  .service-info::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+    border-radius: 25px;
+    background-color:var(--dark-color);
+    transition: 0.4s;
+    overflow: hidden;
+    transform: scale(0);
+    cursor: pointer;
+    overflow: hidden;
+}
+#services_card .service_box:hover .service-info p{
+    color: var(--bg-light);
+}
+#services_card .service_box:hover .service-info h4{
+    color: var(--bg-light);
+}
+#services_card .service_box{
+    position: relative;
+    margin-bottom: 100px;
+}
+#services_card .service_box .service_logo{
+    width:100px;
+    height:100px;
+    background-color:var(--bg-primary-light);
+    line-height: 100px;
+    border-radius: 50%;
+    text-align: center;
+    position: absolute;
+    top:-70px;
+    left:25px;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+#services_card .service-info p{
+   padding: 25px 0;
+}
+#services_card  .service-info i{
+    width: 40px;
+    height: 40px;
+    background-color: var(--hover-color);
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    transform: rotate(-40deg);
+    color: var(--bg-light);
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#services_card .service_box .service-info i:hover{
+background-color: var(--primary-color);
+}
+#services_card .service_box:hover .service_logo{
+    background-color:orange;
+    }
+#services_card h3{
+    font-size: 40px;
+    color: var(--text-color);
+    line-height: 55px;
+    font-weight: 700;
+    padding: 15px 0 50px 0;
+}
+/* ========================SERVICES CARD SECTION END======================== */
+
+
+
+/* ==========================SERVICES PRICING SECTION START========================== */
+#services_pricing .services_pricing{
+    display: flex;
+    flex-wrap: wrap;
+}
+#services_pricing .services_pricing{
+    margin: 60px 0 80px 0;
+}
+#services_pricing .services_pricing .pricing_card{
+   width: 30%;
+   margin-right: 25px;
+   padding:30px 0 10px 25px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 15px;
+   box-shadow: var(--box-shadow );
+   transform: scale(1);
+   transition: .5s;
+
+}
+#services_pricing .services_pricing .pricing_card:hover{
+    transform: scale(1.1);
+}
+#services_pricing .pricing_info .info h3{
+    padding:20px 160px 10px 200px;
+    line-height:55px;
+}
+#services_pricing .services_pricing .pricing_card ul li{
+    padding: 10px 0;
+}
+#services_pricing .services_pricing .pricing_card ul li i{
+width: 30px ;
+height: 30px;
+background-color:transparent;
+border: 1px solid var(--primary-color);
+border-radius: 50%;
+line-height: 30px;
+text-align: center;
+color: var(--primary-color);
+}
+#services_pricing .services_pricing .pricing_card ul li span{
+    color: var(--text-paragraph-color);
+    padding-left: 10px;
+}
+#services_pricing .services_pricing .pricing_card ul li.price_amount sup{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+#services_pricing .services_pricing .pricing_card ul li.price_amount sub{
+    font-size:18px;
+    font-weight: 700;
+    color: var(--text-paragraph-color);
+    letter-spacing: 2px;
+}
+#services_pricing .services_pricing .pricing_card ul li span.price{
+    font-size: 35px;
+    color:var(--text-color);
+    font-weight: 600;
+}
+#services_pricing .services_pricing .pricing_card a{
+    margin: 10px 0 25px 0;
+}
+#services_pricing .services_pricing .pricing_card ul li:nth-child(6){
+    padding-left: 20px;
+}
+#services_pricing .services_pricing .pricing_card span.popular{
+    color: var(--bg-light);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0px 13px 0px 4px;
+    position: absolute;
+    top: -21px;
+    right: -21px;
+    transform: rotate(30deg);
+    width: 130px;
+    height: 54px;
+    line-height: 75px;
+    text-align: right;
+    background-color: var(--hover-color);
+}
+/* ==========================SERVICES PRICING SECTION END============================ */
+
+
+/* ___________________TESTIMONIAL SECTION START___________________ */
+#testimonial {
+    margin: 100px 0 100px 0;
+}
+
+/* ______________FIRST PART______________ */
+#testimonial .first_part .img img{
+    width: 20%;
+    border-radius: 10px;
+}
+#testimonial .first_part{
+    position: relative;
+}
+#testimonial .first_part .img:nth-child(1) img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: img1 7s 0s infinite linear;
+}
+@keyframes img1 {
+    0%,100%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 0;
+        left:10px;
+    }
+}
+#testimonial .first_part .img:nth-child(2) img{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    animation: img2 4s 0s infinite linear;
+}
+@keyframes img2 {
+    0%,100%{
+        top: 80px;
+        right: 0;
+    }
+    50%{
+        top: 80px;
+        right: 10px;
+    }
+}
+#testimonial .first_part .img:nth-child(3) img{
+    position: absolute;
+    top: 140px;
+    left: 0;
+    animation: img3 7s 0s infinite linear;
+}
+@keyframes img3 {
+    0%,100%{
+        top: 140px;
+        left: 0;
+    }
+    50%{
+        top: 140px;
+        left: 80px;
+    }
+}
+#testimonial .first_part .img:nth-child(4) img{
+    position: absolute;
+    top: 210px;
+    right: 0;
+    animation: img4 7s 0s infinite linear;
+}
+
+@keyframes img4 {
+    0%,100%{
+        top: 210px;
+        right: 0;
+    }
+    50%{
+        top: 210px;
+        right: 80px;
+    }
+}
+
+/* ______________SECOND PART______________ */
+
+#testimonial .testimonial_info h3{
+    padding: 10px 300px 10px 300px;
+    line-height:40px;
+    font-weight: 700;
+}
+#testimonial .second_part{
+    /* border: 1px solid red; */
+    padding: 0 0 15px 0;
+}
+#testimonial .second_part .img img{
+    width: 30%;
+    border-radius: 50%;
+    margin: 30px auto;
+    
+}
+#testimonial .second_part p.slide_info{
+    font-size: 18px;
+    line-height: 30px;
+    padding: 10px 25px 15px 25px;
+    color: var(--text-paragraph-color);
+}
+#testimonial .second_part h5{
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+#testimonial .second_part p{
+    color: var(--text-color);
+    padding-top: 15px;
+}
+
+
+
+/* ______________THARED PART______________ */
+#testimonial .thared_part .img img{
+    width: 20%;
+    border-radius: 10px;
+}
+#testimonial .thared_part{
+    position: relative;
+}
+#testimonial .thared_part .img:nth-child(1) img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: img1 5s 0s infinite linear;
+}
+@keyframes img1 {
+    0%,100%{
+        top: 0;
+        left: 20px;
+    }
+    50%{
+        top: 0;
+        left: 60px;
+    }
+}
+#testimonial .thared_part .img:nth-child(2) img{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    animation: img2 7s 0s infinite linear;
+}
+@keyframes img2{
+    0%,100%{
+        top: 100px;
+        right:25px;
+    }
+    50%{
+        top: 100px;
+        right: 60px;
+    }
+}
+#testimonial .thared_part .img:nth-child(3) img{
+    position: absolute;
+    top: 220px;
+    left: 0;
+    animation: img3 8s 0s infinite linear;
+}
+@keyframes img3 {
+    0%,100%{
+        top: 220px;
+        left: 30px;
+    }
+    50%{
+        top: 220px;
+        left: 70px;
+    }
+}
+#testimonial .thared_part .img:nth-child(4) img{
+    position: absolute;
+    top: 350px;
+    right: 0;
+    animation: img4 4s 0s infinite linear;
+}
+
+@keyframes img4 {
+    0%,100%{
+        top: 350px;
+        right:50px;
+    }
+    50%{
+        top: 350px;
+        right: 80px;
+    }
+}
+/* ___________________TESTIMONIAL SECTION END___________________ */
+/* ---------------------------------------------------------SERVICES PAGE END--------------------------------------------------------- */
+
+
+
+
+
+/* -----------------------------------------------------------FAQ PAGE START----------------------------------------------------------- */
+
+#faq{
+    margin: 80px 0;
+}
+#faq .left_side h1{
+    font-weight: 600;
+    font-size: 50px;
+    padding-bottom:30px;
+}
+#faq .right_side h4{
+    font-size: 18px;
+}
+#faq .right_side{
+ padding: 150px 0;
+}
+#faq .right_side ul li{
+    padding: 20px;
+}
+#faq .right_side ul li .qustion_tittle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#faq .right_side ul li .qustion_tittle i{
+    cursor: pointer;
+}
+#faq .right_side ul li .qustion_tittle .icon{
+    position: relative;
+}
+
+
+#faq .right_side ul li .qustion_tittle .icon .plus_btn,
+#faq .right_side ul li .qustion_tittle .icon .plus_btn3,
+#faq .right_side ul li .qustion_tittle .icon .plus_btn4,
+#faq .right_side ul li .qustion_tittle .icon .plus_btn2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#faq .right_side ul li .qustion_tittle .icon .plus_btn2.hide,
+#faq .right_side ul li .qustion_tittle .icon .plus_btn3.hide,
+#faq .right_side ul li .qustion_tittle .icon .plus_btn4.hide,
+#faq .right_side ul li .qustion_tittle .icon .plus_btn.hide{
+    display: none;
+}
+
+
+#faq .right_side ul li .qustion_tittle .icon .minus_btn,
+#faq .right_side ul li .qustion_tittle .icon .minus_btn3,
+#faq .right_side ul li .qustion_tittle .icon .minus_btn4,
+#faq .right_side ul li .qustion_tittle .icon .minus_btn2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#faq .right_side ul li .qustion_tittle .icon .minus_btn.show,
+#faq .right_side ul li .qustion_tittle .icon .minus_btn2.show,
+#faq .right_side ul li .qustion_tittle .icon .minus_btn4.show,
+#faq .right_side ul li .qustion_tittle .icon .minus_btn3.show
+{
+    display: block;
+}
+
+
+
+#faq .right_side ul li .ans_btn,
+#faq .right_side ul li .ans_btn2,
+#faq .right_side ul li .ans_btn4,
+#faq .right_side ul li .ans_btn3{
+    padding-top: 20px;
+}
+#faq .right_side ul li p.ans_btn,
+#faq .right_side ul li p.ans_btn4,
+#faq .right_side ul li p.ans_btn3,
+#faq .right_side ul li p.ans_btn2{
+    display: none;
+}
+#faq .right_side ul li p.ans_btn.show,
+#faq .right_side ul li p.ans_btn2.show,
+#faq .right_side ul li p.ans_btn4.show,
+#faq .right_side ul li p.ans_btn3.show{
+    display: block;
+}
+/* -----------------------------------------------------------FAQ PAGE END------------------------------------------------------------- */

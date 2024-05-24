@@ -1,0 +1,787 @@
+/*================================================== XXL Device ==================================================*/
+@media (min-width:1400px) {
+   
+}
+
+
+
+/*================================================== XL Device ==================================================*/
+@media (min-width:1200px) and (max-width:1399.98px) {
+   
+}
+
+
+
+/*================================================== LG Device ==================================================*/
+@media (min-width:992px) and (max-width:1399.98px) {
+   
+}
+
+
+/*================================================== MD Device ==================================================*/
+@media (min-width:768px) and (max-width:991.98px) {
+
+
+
+  /* ________________________HOME PAGE START________________________ */
+  /* ===================HERO AREA=================== */
+ #hero_area .hero_info{
+  margin: 50px 0 0 0;
+ } 
+ #hero_area h2 {
+  color: var(--text-color);
+  font-size: 50px;
+}
+#hero_area h1 {
+  color: var(--primary-color);
+  font-size:70px;
+  letter-spacing:10px;
+  padding-bottom: 10px;
+}
+#hero_area img{
+  width: 100%;
+}
+#hero_area{
+  margin-bottom: 100px;
+}
+
+/* ===================FLY MAN =================== */
+#fly_man {
+  display: none;
+}
+
+/* ===================SERVICE CARD=================== */
+#service .service_card{
+  margin-top:90px;
+}
+#service {
+  margin: 80px 0 80px 0;
+}
+
+/* ==============-------------skill==============--- */
+#skill {
+  margin:0;
+}
+#skill .skill_img{
+  margin-top: 20px;
+}
+
+/* ======================Pricing section====================== */
+#Pricing .price_details{
+  margin-top: 56px;
+}
+#Pricing .pricing_card {
+  width:45%;
+  margin-right:15px;
+  margin-left: 20px;
+}
+#Pricing .pricing_card:nth-child(2) {
+  transform: scale(1);
+  background-color: var(--primary-color);
+}
+#Pricing .pricing_card:nth-child(3){
+
+  margin-top:30px;
+}
+
+/* ===================FILTER SECTION START=================== */
+#filter .itemBox{
+  width: 47%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* =================BLOG POST SECTION START================= */
+#blog_post .blog_tittle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#blog_post .blog_tittle .blog_btn{
+  margin: 0 0 30px 500px;
+}
+#blog_post .blog_box {
+  margin:15px 0;
+}
+
+  /* ________________________HOME PAGE END________________________-- */
+
+
+
+  /* ________________________ABOUT PAGE START________________________ */
+   #service_about .about_service_card {
+    width:47%;
+    margin-right:10px ;
+    margin-left:10px;
+  }
+  /* __________________________________________ABOUT PAGE END__________________________________________ */
+
+
+      
+       
+
+    /*_____________________ SHOP PAGE START_____________________ */
+    #shop_card .all_cart .card_box {
+        width:47%;
+        box-shadow: var(--box-shadow);
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      #shop_card .card_box img {
+        transform: scale(1);
+        transition: .4s;
+        width: 100%;
+      }
+      #page_change {
+             margin: 30px 40%;
+            width: 100%;
+      }
+      #shop_card .product_categories {
+        box-shadow: var(--box-shadow);
+        margin: 30px 10px 0px 10px;
+        padding: 25px 20px;
+        border-radius: 10px;
+      }
+      #shop_card .product_categories_list{
+        margin: 30px 10px 0px 25px;
+      }
+      #shop_card .product_categories h4::after {
+        right: 383px;
+      }
+      #shop_card .product_categories_list h4::after {
+        right: 472px;
+      }
+    /*_____________________ SHOP PAGE END_____________________ */
+
+
+    /* _____________________________----------SERVICE PAGE START_____________________________---------- */
+    /* ==============About nav============== */
+    #about_nav #pills-tab {
+      display: flex;
+      flex-wrap:wrap;
+      background-color: #fff;
+
+    }
+    #about_nav #pills-tab li button {
+      padding: 15px 90px;
+      position: relative;
+      color: var(--text-color);
+      display: inline-block;
+      font-size: 25px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      box-shadow: var(--box-shadow);
+    }
+
+    /* ===========Pricing Section Start=========== */
+    #services_pricing .pricing_info .info h3 {
+      padding: 20px 50px 10px 50px;
+      line-height: 55px;
+    }
+    #services_pricing .services_pricing .pricing_card {
+      width:45%;
+      margin-right:20px;
+    }
+    #services_pricing .services_pricing .pricing_card:nth-child(1){
+      margin-left:10px;
+    }
+    #services_pricing .services_pricing .pricing_card:nth-child(2){
+      margin-left:10px;
+    }
+    #services_pricing .services_pricing .pricing_card:nth-child(3){
+      margin-left:10px;
+      margin-top:50px;
+    }
+
+    /* ============Testimonial section Section Start============ */
+    #testimonial .testimonial_info h3 {
+      padding: 10px 160px 10px 160px;
+    }
+    /* _____________________________----------SERVICE PAGE END_____________________________---------- */
+
+
+    
+/* __________________FOOTER SECTION START__________________ */
+#footer {
+  margin: 80px 0px 10px 0px;
+}
+#footer .footer_top {
+  padding-left: 10px;
+}
+#footer .footer_bottom .footer_social_icon {
+  margin-top:20px;
+  text-align: center;
+}
+#footer .footer_bottom .copy_info h5{
+  line-height:30px;
+  padding-left: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+/* __________________FOOTER SECTION START__________________ */
+
+}
+
+
+/* ===============================================SM DEVICE=============================================== */
+@media (min-width:576px) and (max-width:767.98px){
+     
+  
+  /* ________________________HOME PAGE START________________________ */
+  /* ===================HERO AREA=================== */
+ #hero_area .hero_info{
+  margin: 50px 0 0 0;
+ } 
+ #hero_area h2 {
+  color: var(--text-color);
+  font-size: 50px;
+}
+#hero_area h1 {
+  color: var(--primary-color);
+  font-size:70px;
+  letter-spacing:10px;
+  padding-bottom: 10px;
+}
+#hero_area img{
+  width: 100%;
+}
+#hero_area{
+  margin-bottom: 100px;
+}
+
+
+/* ===================FLY MAN =================== */
+#fly_man{
+  display: none;
+}
+
+/* ===================SERVICE CARD=================== */
+#service .service_card{
+  margin-top:90px;
+}
+#service {
+  margin: 80px 0 80px 0;
+}
+#service .service_card .service_box:nth-child(3){
+  margin-top: 95px;
+}
+#service h3 {
+  font-size:40px;
+}
+
+/* ==============-------------skill==============--- */
+#skill {
+  margin:0;
+}
+#skill .skill_img{
+  margin-top: 20px;
+}
+.skill_info h3 {
+  font-size:40px;
+  line-height: 55px;
+}
+
+/* ======================Pricing section====================== */
+#Pricing .price_details{
+  margin-top: 56px;
+}
+#Pricing .pricing_card {
+  width:93%;
+  margin-right:15px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+#Pricing .pricing_card:nth-child(2) {
+  transform: scale(1);
+  background-color: var(--primary-color);
+}
+.pricing_info h3 {
+  font-size: 40px;
+  padding: 20px 0 0 20px;
+}
+#Pricing .pricing_card h4 {
+  padding-left: 25px;
+  padding-bottom: 28px;
+}
+#Pricing .pricing_card ul li {
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* ===================FILTER SECTION START=================== */
+#filter .itemBox{
+  width: 97%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#filter .container ul {
+  display:block;
+  width: 50%;
+  padding: 10px 0 40px 0 ;
+  margin: auto;
+}
+#filter .container ul li{
+ text-align: center;
+ margin: 8px 0;
+}
+
+/* ===================FILTER SECTION START=================== */
+#filter .itemBox{
+  width:97%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* =================BLOG POST SECTION START================= */
+#blog_post .blog_tittle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#blog_post .blog_tittle .blog_btn{
+  margin: 0 0 20px 320px;
+}
+#blog_post .blog_box {
+  margin:15px 0;
+}
+
+  /* _________________________________________HOME PAGE END_________________________________________-- */
+
+
+
+  /* ________________________ABOUT PAGE START________________________ */
+  #service_about .about_service_card {
+    width:96%;
+    margin-left: 10px;
+  }
+  #service_about {
+    margin: 80px 0 60px 0;
+  }
+  #about_nav {
+    margin:0;
+  }
+  
+  /* _____________________-------------ABOUT PAGE END_____________________------------- */
+
+
+
+
+ /*__________________________________________SHOP PAGE START__________________________________________ */
+ #shop_card .all_cart .card_box {
+    width:95%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #shop_card .card_box img:hover{
+    transform: scale(1.1);
+}
+  #shop_card .card_box img {
+    width: 100%;
+  }
+  #page_change {
+         margin: 30px 40%;
+        width: 100%;
+  }
+  #shop_card .product_categories {
+    box-shadow: var(--box-shadow);
+    margin: 30px 10px 0px 25px;
+  }
+  #shop_card .product_categories_list{
+    margin: 30px 10px 0px 25px;
+
+  }
+  #shop_card .product_categories h4::after {
+    right: 196px;
+  }
+  #shop_card .product_categories_list h4::after {
+    right:295px;
+  }
+  #shop_card .card_box a.cart_btn {
+    margin: 10px 0 30px 0;
+    display: inline-block;
+  }
+
+/*_____________________ SHOP PAGE END_____________________ */
+
+
+
+
+
+/* ____________________________________=========SERVICE PAGE START____________________________________========= */
+/* ==============About nav============== */
+#about_nav #pills-tab {
+  display: flex;
+  flex-wrap:wrap;
+  background-color: #fff;
+}
+
+ /* ===========Pricing Section Start=========== */
+ #services_pricing{
+  margin-top: 50px;
+ }
+ #services_pricing .pricing_info .info h3 {
+  padding: 20px 20px 10px 20px;
+  line-height: 55px;
+ }
+ #services_pricing .services_pricing .pricing_card {
+  width:95%;
+  margin: 10px 0 50px 10px;
+}
+#services_pricing .services_pricing {
+  margin: 30px 0 40px 0;
+}
+#services_pricing .services_pricing .pricing_card h4{
+  padding: 15px 0;
+}
+
+/* ============Testimonial section Section Start============ */
+#testimonial {
+  margin: 40px 0 40px 0;
+}
+#testimonial .testimonial_info h3 {
+  padding: 10px 50px 10px 50px;
+}
+#testimonial .first_part{
+  display: none;
+}
+#testimonial .first_part{
+  display: none;
+}
+#testimonial .second_part{
+  box-shadow: var(--box-shadow);
+}
+#testimonial .thared_part{
+  display: none;
+}
+/* ____________________________________=========SERVICE PAGE END____________________________________========= */
+
+
+
+/* __________________FOOTER SECTION START__________________ */
+#footer {
+  margin: 80px 0px 10px 0px;
+}
+#footer .footer_top {
+  padding-left: 10px;
+}
+#footer .footer_bottom .footer_social_icon {
+  margin-top:20px;
+  text-align: center;
+}
+#footer .footer_bottom .copy_info h5{
+  line-height:30px;
+  padding-left: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+/* __________________FOOTER SECTION START__________________ */
+
+/* ______________________________________NEWS PAGE START______________________________________ */
+#faq .left_side h1 {
+  font-size: 40px;
+  margin-top: 15px;
+}
+/* ______________________________________NEWS PAGE END______________________________________ */
+
+
+
+
+
+/* ______________________________________CONTACT PAGE START______________________________________ */
+#contact_slider .contact_form h3 {
+  padding-bottom: 25px;
+  text-align: center;
+}
+#contact_slider .submit_btn{
+ margin-left: 500px;
+ margin: 10px 0 20px 140px;
+}
+/* ______________________________________CONTACT PAGE END______________________________________ */
+
+}
+
+
+
+
+
+/* ==========================================XS DEVICE========================================== */
+@media (min-width:400px) and (max-width:575px){
+  
+
+
+  /* ________________________HOME PAGE START________________________ */
+  /* ===================HERO AREA=================== */
+  #hero_area .hero_info{
+    margin: 50px 0 0 0;
+   } 
+   #hero_area h2 {
+    color: var(--text-color);
+    font-size: 50px;
+  }
+  #hero_area h1 {
+    color: var(--primary-color);
+    font-size:70px;
+    letter-spacing:10px;
+    padding-bottom: 10px;
+  }
+  #hero_area img{
+    width: 100%;
+  }
+  #hero_area{
+    margin-bottom: 100px;
+  }
+  
+  
+  /* ===================FLY MAN =================== */
+  #fly_man {
+    display: none;
+  }
+
+/* ===================SERVICE CARD=================== */
+#service .service_card{
+  margin-top:90px;
+}
+#service {
+  margin: 80px 0 80px 0;
+}
+#service .service_card .service_box:nth-child(3){
+  margin-top: 95px;
+}
+#service h3 {
+  font-size:35px;
+}
+/* ==============-------------skill==============--- */
+#skill {
+  margin:0;
+}
+#skill .skill_img{
+  margin-top: 20px;
+}
+.skill_info h3 {
+  font-size:40px;
+  line-height: 55px;
+}
+
+/* ======================Pricing section====================== */
+#Pricing .price_details{
+  margin-top: 56px;
+}
+#Pricing .pricing_card {
+  width:93%;
+  margin-right:15px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+#Pricing .pricing_card:nth-child(2) {
+  transform: scale(1);
+  background-color: var(--primary-color);
+}
+.pricing_info h3 {
+  font-size: 40px;
+  padding: 20px 0 0 20px;
+}
+#Pricing .pricing_card h4 {
+  padding-left: 25px;
+  padding-bottom: 28px;
+}
+#Pricing .pricing_card ul li {
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+/* ===================FILTER SECTION START=================== */
+#filter .itemBox{
+  width: 97%;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#filter .container ul {
+  display:block;
+  width: 50%;
+  padding: 10px 0 40px 0 ;
+  margin: auto;
+}
+#filter .container ul li{
+ text-align: center;
+ margin: 8px 0;
+}
+
+/* =================BLOG POST SECTION START================= */
+#blog_post .blog_tittle{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#blog_post .blog_tittle .blog_btn{
+  margin: 0 0 20px 60px;
+}
+#blog_post .blog_box {
+  margin:15px 0;
+}
+
+/* =================BLOG POST SECTION START================= */
+#blog_post .blog_tittle{
+  display: flex;
+  flex-direction: column;
+}
+    /* ______________________________________HOME PAGE END______________________________________-- */
+
+
+
+  /* ________________________ABOUT PAGE START________________________ */
+  #service_about .about_service_card {
+    width:95%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #service_about {
+    margin: 80px 0 60px 0;
+  }
+  #about_nav {
+    margin:0;
+  }
+  /* __________________________________________ABOUT PAGE END__________________________________________ */
+
+
+
+/*__________________________________________SHOP PAGE START__________________________________________ */
+#shop_card .all_cart .card_box {
+  width:95%;
+  margin-left: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#shop_card .card_box img:hover{
+  transform: scale(1.1);
+}
+#shop_card .card_box img {
+  width: 100%;
+}
+#page_change {
+       margin: 30px 25%;
+      width: 100%;
+}
+#shop_card .product_categories {
+  box-shadow: var(--box-shadow);
+  margin: 30px 10px 0px 25px;
+}
+#shop_card .product_categories_list{
+  margin: 30px 10px 0px 25px;
+
+}
+#shop_card .product_categories h4::after {
+  right: 58px;
+}
+#shop_card .product_categories_list h4::after {
+  right:157px;
+}
+#shop_card .card_box a.cart_btn {
+  margin: 10px 0 30px 0;
+  display: inline-block;
+}
+
+/*_____________________ SHOP PAGE END_____________________ */
+
+
+/* __________________FOOTER SECTION START__________________ */
+#footer {
+    margin: 80px 0px 10px 0px;
+  }
+#footer .footer_top {
+    padding-left: 10px;
+}
+#footer .footer_bottom .footer_social_icon {
+    margin-top:20px;
+}
+#footer .footer_bottom .copy_info h5{
+    line-height:30px;
+    padding-left: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+/* __________________FOOTER SECTION START__________________ */
+
+
+
+
+/* __________________________________=====SERVICE PAGE START__________________________________===== */
+/* ===========Pricing Section Start=========== */
+#services_pricing{
+  margin-top: 50px;
+ }
+#services_pricing .pricing_info .info h3 {
+  padding:0px;
+  line-height: 55px;
+ }
+ #services_pricing .services_pricing .pricing_card {
+  width:95%;
+  margin: 10px 0 50px 10px;
+  transform: scale(0.9);
+
+}
+#services_pricing .services_pricing .pricing_card:hover{
+  transform: scale(1);
+}
+#services_pricing .services_pricing .pricing_card h4{
+  padding: 15px 0;
+}
+
+/* ==============About nav============== */
+#about_nav #pills-tab {
+  display: flex;
+  flex-wrap:wrap;
+  background-color: #fff;
+}
+
+/* ============Testimonial section Section Start============ */
+#testimonial {
+  margin:0;
+}
+#testimonial .testimonial_info h3 {
+  padding:10px;
+}
+#testimonial .first_part{
+  display: none;
+}
+#testimonial .first_part{
+  display: none;
+}
+#testimonial .second_part{
+  box-shadow: var(--box-shadow);
+  margin: 10px;
+}
+#testimonial .thared_part{
+  display: none;
+}
+/* __________________________________=====SERVICE PAGE END__________________________________======= */
+
+
+/* ______________________________________NEWS PAGE START______________________________________ */
+#faq .left_side h1 {
+  font-size: 40px;
+  margin-top: 15px;
+}
+/* ______________________________________NEWS PAGE END______________________________________ */
+
+/* ______________________________________CONTACT PAGE START______________________________________ */
+#contact_slider .contact_form h3 {
+  padding-bottom: 25px;
+  text-align: center;
+}
+#contact_slider .submit_btn{
+ margin-left: 500px;
+ margin: 10px 0 10px 80px;
+}
+#contact_slider .contact_form {
+  background-color: #FFFFFF;
+  padding: 30px;
+  margin: 15px 0px 15px 0px;
+  border-radius: 15px;
+}
+/* ______________________________________CONTACT PAGE END______________________________________ */
+
+
+
+}
